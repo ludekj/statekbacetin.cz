@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statek Bačetín - Dřevo & Řezivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2d4a22;
+            --secondary-green: #3d5a2e;
+        }
+        
+        .hero-section {
+            height: 70vh;
+            background: linear-gradient(rgba(45,74,34,0.7), rgba(45,74,34,0.7)),
+                        url('https://images.unsplash.com/photo-1448375240586-882707db888b');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin: 1rem 0;
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-map {
+            height: 300px;
+            border-radius: 10px;
+            border: 3px solid var(--primary-green);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            background-color: var(--primary-green);
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: var(--primary-green)!important;">
+        <div class="container">
+            <a class="navbar-brand" href="#">STATEK BAČETÍN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sluzby">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold mb-3">Kvalitní dřevo z Orlických hor</h1>
+            <p class="lead">Dřevo na topení i stavbu</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="sluzby" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Naše služby 🪵</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover text-center p-4">
+                        <div class="service-icon">🔥🪓</div>
+                        <h3>Palivové & Štípané Dřevo</h3>
+                        <p class="text-muted">Výhřevné dřevo pro všechny druhy topení včetně štípané formy</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover text-center p-4">
+                        <div class="service-icon">🌲</div>
+                        <h3>Prodej řeziva</h3>
+                        <p class="text-muted">Kvalitní řezivo pro stavbu a truhlářské práce</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover text-center p-4">
+                        <div class="service-icon">🏠</div>
+                        <h3>Pronájem prostor</h3>
+                        <p class="text-muted">Skladové a výrobní prostory k pronájmu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontakt" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Kontakt 🌳</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-3">
+                                📧 <a href="mailto:info@statekbacetin.cz" class="text-decoration-none">info@statekbacetin.cz</a>
+                            </li>
+                            <li class="mb-3">
+                                📞 <a href="tel:+420702051484" class="text-decoration-none">+420 702 051 484</a>
+                            </li>
+                            <li class="mb-3">
+                                🏢 Orlické Záhoří 20,<br>517 64 Orlické Záhoří
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <iframe 
+                        class="contact-map w-100"
+                        src="https://maps.google.com/maps?q=50.2981414,16.2254931&z=15&output=embed"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Statek Bačetín a.s. - Všechna práva vyhrazena</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
